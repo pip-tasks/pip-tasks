@@ -1,0 +1,1 @@
+$Greeting = "Another heaven"

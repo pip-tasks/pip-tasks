@@ -69,3 +69,24 @@ function ConvertFrom-Hashtable
         $result
     }
 }
+
+function ConvertFrom-Xml
+{
+    [CmdletBinding()]
+    param
+    (
+        [Parameter(Mandatory=$true, Position=0, ValueFromPipeline=$true, ValueFromPipelinebyPropertyName=$true)]
+        [xml] $InputObject
+    )
+    process
+    {
+        $sw = [System.IO.StringWriter]::new()
+        $xmlSettings = [System.Xml.XmlWriterSettings]::new()
+        $xmlSettings.ConformanceLevel = [System.Xml.ConformanceLevel]::Fragment
+        $xmlSettings.Indent = $true
+        $xw = [System.Xml.XmlWriter]::Create($sw, $xmlSettings)
+        $InputObject.WriteTo($xw)
+        $xw.Close()
+        return $sw.ToString()
+    }
+}

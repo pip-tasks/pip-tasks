@@ -73,7 +73,7 @@ Each component must have configuration, build tasks or both
 
 4. Download external dependencies for all components
 ```powershell
-Invoke-Task RestoreDep -All
+Invoke-Task InstallDep -All
 ```
 
 5. Build all components

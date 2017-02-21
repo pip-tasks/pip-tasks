@@ -15,6 +15,7 @@ if ($path -eq "") { $path = "." }
 . "$path\src\Workspace.ps1"
 . "$path\src\Build.ps1"
 . "$path\src\Files.ps1"
+. "$path\src\Converters.ps1"
 . "$path\src\Arguments.ps1"
 . "$path\src\Properties.ps1"
 . "$path\src\Execute.ps1"

@@ -86,7 +86,7 @@ function ConvertFrom-Xml
         $xmlSettings.Indent = $true
         $xw = [System.Xml.XmlWriter]::Create($sw, $xmlSettings)
         $InputObject.WriteTo($xw)
-        $xw.Close()
+        $xw.Flush()
         return $sw.ToString()
     }
 }

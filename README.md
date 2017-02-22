@@ -1,4 +1,4 @@
-# <img src="https://github.com/pip-tasks/pip-tasks-ps/raw/master/artifacts/logo.png" alt="Pip.Devs Logo" style="max-width:30%"> <br/> Cross platform project build system in Powershell
+# <img src="https://github.com/pip-tasks/pip-tasks/raw/master/artifacts/logo.png" alt="Pip.Devs Logo" style="max-width:30%"> <br/> Cross platform project build system in Powershell
 
 Modern projects often contain multiple components: microservices, APIs, client applications, utility tools. 
 They may be written in different languages and run on multiple platforms. Each language, platform and operating system
@@ -16,8 +16,12 @@ consisted of multiple heterogenous components. It is developed on the top of the
 * Mechanism of configuration and task overrides allows to tailor builds to local environment without introducing breaking changes into build scripts
 
 There is a growing number of tasks you can use in your builds
-* [pip-tasks-common-ps](https://github.com/pip-tasks/pip-tasks-common-ps) - common tasks for Git, Npm, Typescript
-* [pip-tasks-dotnet-ps](https://github.com/pip-tasks/pip-tasks-dotnet-ps) - .NET specific tasks for Nuget, Visual Studio and Service Fabric 
+* [pip-tasks-common](https://github.com/pip-tasks/pip-tasks-common) - common tasks for Git, Npm, Typescript
+* [pip-tasks-dotnet](https://github.com/pip-tasks/pip-tasks-dotnet) - .NET specific tasks for Nuget, Visual Studio and Service Fabric 
+* [pip-tasks-java](https://github.com/pip-tasks/pip-tasks-java) - Java specific tasks for Maven and Java 
+* [pip-tasks-js](https://github.com/pip-tasks/pip-tasks-js) - Javascript and Node.js specific tasks for Npm, Typescript, Mocha
+* [pip-tasks-python](https://github.com/pip-tasks/pip-tasks-python) - Python specific tasks for Python, Pip, PyTest
+* [pip-tasks-all](https://github.com/pip-tasks/pip-tasks-all) - All above tasks 
 
 Project workspace on the local disk has the following files and folders
 ```bash
@@ -94,9 +98,9 @@ Invoke-Task Deploy -Component component1
 
 ## Installation
 
-* Checkout **pip-tasks-ps** and, optionally, pluggable build tasks like **pip-tasks-common-ps** or **pip-tasks-dotnet-ps** into local folder
+* Checkout **pip-tasks** and, optionally, pluggable build tasks like **pip-tasks-common** or **pip-tasks-dotnet** into local folder
 * Add the folder to **PSModulePath**
-* Import **pip-tasks-ps** module and pluggable build tasks
+* Import **pip-tasks** module and pluggable build tasks
 
 ## Acknowledgements
 

@@ -1,6 +1,6 @@
 ########################################################
 ##
-## pip-tasks-ps.psm1
+## pip-tasks.psm1
 ## Pip.Tasks - Cross platform project build system
 ## Module definition
 ##
@@ -9,7 +9,7 @@
 @{
 
 # Script module or binary module file associated with this manifest
-ModuleToProcess = 'pip-tasks-ps.psm1'
+ModuleToProcess = 'pip-tasks.psm1'
 
 # Version number of this module.
 ModuleVersion = '1.0.0.0'
@@ -81,7 +81,7 @@ AliasesToExport = '*'
 ModuleList = @()
 
 # List of all files packaged with this module
-FileList = @('pip-tasks-ps.psm1')
+FileList = @('pip-tasks.psm1')
 
 # Private data to pass to the module specified in ModuleToProcess
 PrivateData = ''

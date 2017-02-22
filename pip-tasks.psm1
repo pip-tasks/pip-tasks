@@ -1,6 +1,6 @@
 ########################################################
 ##
-## pip-tasks-ps.psm1
+## pip-tasks.psm1
 ## Pip.Tasks - Cross platform project build system
 ## Startup module
 ##

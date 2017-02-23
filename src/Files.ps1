@@ -44,7 +44,9 @@ PS> New-SoftLink -SourcePath ./dir -DestPath ./dir2
         if (Test-OS -Name 'Windows')
         {
             Invoke-External {
-                & mklink /J $DestPath $SourcePath 2>&1 | Out-String
+                $SourcePath = $SourcePath.Replace("/", "\")
+                $DestPath = $DestPath.Replace("/", "\")
+                & cmd /c "mklink /J $DestPath $SourcePath" 2>&1 | Out-String
             } -CaptureOutput | Out-Null          
         }
         else

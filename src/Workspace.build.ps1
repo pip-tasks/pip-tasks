@@ -18,6 +18,7 @@ if ($Path -eq $null) { throw "Internal error: workspace location is not defined"
 Set-Location -Path $Path
 $BuildPath = $Path
 
+$TaskName = "$BuildTask"
 Write-Host ("`n" + ('-' * 7) + " Executing Workspace:$($BuildTask) " + ('-' * 7)) -ForegroundColor Yellow -BackgroundColor DarkGray
 
 # Load scripts with standard imperative tasks

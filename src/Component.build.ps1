@@ -19,6 +19,7 @@ Set-Location -Path $Path
 $BuildPath = $Path
 
 $ComponentName = $(Get-Item -Path $Path).Name
+$TaskName = "$BuildTask"
 Write-Host ("`n" + ('-' * 7) + " Executing $($ComponentName):$($BuildTask) " + ('-' * 7)) -ForegroundColor Yellow -BackgroundColor DarkGray
 
 # Load scripts with standard imperative tasks
